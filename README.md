@@ -1,4 +1,14 @@
 
+Turns your calliope into a compass. Your device calibrates itself to find North, then is able to point North when you rotate the calliope. There are eight different directions in which the arrow can point: N, NE, E, SE, S, SW, W, NW, N.
+
+
+<img width="339" height="304" alt="image" src="https://github.com/user-attachments/assets/63cd55da-1a63-46db-851f-327b3acb694a" />
+
+
+
+
+
+
 > Diese Seite bei [https://cateye0434.github.io/calliope_arrow_compass/](https://cateye0434.github.io/calliope_arrow_compass/) öffnen
 
 ## Als Erweiterung verwenden
