@@ -1,5 +1,12 @@
 input.onButtonPressed(Button.A, function () {
+    findNorth()
+})
+input.onButtonPressed(Button.B, function () {
+    input.calibrateCompass()
+})
+function findNorth () {
     if (input.compassHeading() < 1 || input.compassHeading() > 359) {
+        music.play(music.tonePlayable(262, music.beat(BeatFraction.Breve)), music.PlaybackMode.InBackground)
         basic.showLeds(`
             . . # . .
             . # # # .
@@ -64,8 +71,5 @@ input.onButtonPressed(Button.A, function () {
             . . . . #
             `)
     }
-})
-input.onButtonPressed(Button.B, function () {
-    input.calibrateCompass()
-})
+}
 input.calibrateCompass()
