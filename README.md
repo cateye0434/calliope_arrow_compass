@@ -1,5 +1,4 @@
-
-Turns your calliope into a compass. Your device calibrates itself to find North, then is able to point North when you rotate the calliope. There are eight different directions in which the arrow can point: N, NE, E, SE, S, SW, W, NW, N.
+Turns calliope mini ARM single-board computer into a compass. Device can be calibrated to find North by pressing button 'A', then is able to point North when you rotate the calliope. Pressing button'B' will calibrate the device again. There are eight different directions in which the arrow can point: N, NE, E, SE, S, SW, W, NW, N.
 
 
 <img width="339" height="304" alt="image" src="https://github.com/user-attachments/assets/63cd55da-1a63-46db-851f-327b3acb694a" />
