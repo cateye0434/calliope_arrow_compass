@@ -1,19 +1,71 @@
-basic.forever(function () {
-    if (input.compassHeading() < 23) {
-        basic.showIcon(IconNames.ArrowNorth)
-    } else if (input.compassHeading() < 68) {
-        basic.showIcon(IconNames.ArrowNorthWest)
-    } else if (input.compassHeading() < 113) {
-        basic.showIcon(IconNames.ArrowWest)
-    } else if (input.compassHeading() < 158) {
-        basic.showIcon(IconNames.ArrowSouthWest)
-    } else if (input.compassHeading() < 203) {
-        basic.showIcon(IconNames.ArrowSouth)
-    } else if (input.compassHeading() < 248) {
-        basic.showIcon(IconNames.ArrowSouthEast)
-    } else if (input.compassHeading() < 293) {
-        basic.showIcon(IconNames.ArrowEast)
-    } else if (input.compassHeading() < 338) {
-        basic.showIcon(IconNames.ArrowNorthEast)
+input.onButtonPressed(Button.A, function () {
+    if (input.compassHeading() < 1 || input.compassHeading() > 359) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            . . # . .
+            . . # . .
+            `)
+    } else if (input.compassHeading() == 45) {
+        basic.showLeds(`
+            . # # # #
+            . . . # #
+            . . # . #
+            . # . . #
+            # . . . .
+            `)
+    } else if (input.compassHeading() == 90) {
+        basic.showLeds(`
+            . . # . .
+            . . . # .
+            # # # # #
+            . . . # .
+            . . # . .
+            `)
+    } else if (input.compassHeading() == 135) {
+        basic.showLeds(`
+            # . . . .
+            . # . . #
+            . . # . #
+            . . . # #
+            . # # # #
+            `)
+    } else if (input.compassHeading() == 180) {
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            # . # . #
+            . # # # .
+            . . # . .
+            `)
+    } else if (input.compassHeading() == 225) {
+        basic.showLeds(`
+            . . . . #
+            # . . # .
+            # . # . .
+            # # . . .
+            # # # # .
+            `)
+    } else if (input.compassHeading() == 270) {
+        basic.showLeds(`
+            . . # . .
+            . # . . .
+            # # # # #
+            . # . . .
+            . . # . .
+            `)
+    } else if (input.compassHeading() == 315) {
+        basic.showLeds(`
+            # # # # .
+            # # . . .
+            # . # . .
+            # . . # .
+            . . . . #
+            `)
     }
 })
+input.onButtonPressed(Button.B, function () {
+    input.calibrateCompass()
+})
+input.calibrateCompass()

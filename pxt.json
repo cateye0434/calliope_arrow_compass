@@ -14,11 +14,12 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "8.1.11",
-        "targetId": "calliopemini"
+        "target": "8.0.18",
+        "targetId": "microbit"
     },
     "supportedTargets": [
-        "calliopemini"
+        "calliopemini",
+        "microbit"
     ],
     "preferredEditor": "blocksprj"
 }
